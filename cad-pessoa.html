@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de pessoas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cad-pessoa.css">
 </head>
 <body>
     <h1>Cadastro de pessoas</h1>
     <hr>
-    <form action="./grava.php" method="post">
-        <label for="Nome-completo">Nome completo</label><br>
+    <div id="cad">
+        <br><label for="Nome-completo">Nome completo</label><br>
         <input type="text" id="Nome-completo" name="Nome-completo"><br>
-        <label for="Idade">Idade</label><br>
-        <input type="date" id="Idade" name="Idade"><br>
-        <label for="email">email</label><br>  
+        <br><label for="email">email</label><br>  
         <input type="email" name="email" id="email"><br>
-        <label for="Telefone">Telefone</label><br>
+        <br><label for="Telefone">Telefone</label><br>
         <input type="number" id="Telefone" name="Telefone"><br>
-        <label for="Endereço">Endereço</label><br>
+        <br><label for="Endereço">Endereço</label><br>
         <input type="text" id="Endereço" name="Endereço"><br>
-        <label for="Estado">Estado</label><br>
+        <br><label for="Idade">Idade</label><br>
+        <input type="date" id="Idade" name="Idade"><br>
+        <br><label for="Estado">Estado</label><br>
         <select name="Estado" id="Estado">
             <option value="Brasil">Brasil</option>
             <option value="Mato-Grosso">Mato Grosso</option>
@@ -34,7 +34,7 @@
             <option value="São-paulo">São Paulo</option>
             <option value="Maranhão">Maranhão</option>
         </select><br>
-        <Label for="Cidade">Cidade</Label><br>
+        <br><Label for="Cidade">Cidade</Label><br>
         <select name="Cidade" id="Cidade">
             <option value="Rio-garnde">Rio grande</option>
             <option value="Porto alegre">Porto alegre</option>
@@ -48,10 +48,9 @@
             <option value="São-paulo">São Paulo</option>
             <option value="Maranhão">Maranhão</option>
         </select><br>
-            
-        </select><br>
-        
+        </select>
         <label for="Cadastrar"></label><br>
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Cadastrar" id="cadastrar">
+    </div>
 </body>
 </html>
